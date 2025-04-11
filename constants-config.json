@@ -1,6 +1,6 @@
 {
 	"database-id": "1d23563a6ca580499678f475cd441c6f",
-	"author": "",
+	"author": "段舸",
 	"tracking": {
 		"google-analytics": {
 			"use-ga": true,
@@ -15,8 +15,8 @@
 	},
 	"google-search-console-html-tag": "",
 	"socials": {
-		"email": "",
-		"github": "",
+		"email": "admin@z23.cc",
+		"github": "https://github.com/z23cc",
 		"googlescholar": "",
 		"semanticscholar": "",
 		"dblp": "",
@@ -73,46 +73,46 @@
 		"shiki-transform": "<<shiki-transform>>",
 		"table": "<<🗂️>>"
 	},
-	"recent-posts-on-home-page": false,
+	"recent-posts-on-home-page": true,
 	"theme": {
 		"colors": {
 			"bg": {
-				"light": "249 249 249",
-				"dark": "28 30 32"
+				"light": "252 252 252",
+				"dark": "22 25 28"
 			},
 			"text": {
-				"light": "34 39 42",
-				"dark": "255 255 255"
+				"light": "30 35 40",
+				"dark": "245 245 245"
 			},
 			"link": {
-				"light": "85 123 118",
-				"dark": "199 200 203"
+				"light": "45 120 190",
+				"dark": "120 180 240"
 			},
 			"accent": {
-				"light": "203 41 65",
-				"dark": "41 188 136"
+				"light": "220 60 80",
+				"dark": "70 200 150"
 			},
 			"accent-2": {
-				"light": "17 17 17",
-				"dark": "237 237 237"
+				"light": "30 30 30",
+				"dark": "230 230 230"
 			},
 			"quote": {
-				"light": "203 41 65",
-				"dark": "205 254 183"
+				"light": "220 60 80",
+				"dark": "180 250 170"
 			}
 		},
 		"fontfamily-google-fonts": {
-			"combined-url": "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap",
-			"sans-font-name": "Roboto",
-			"serif-font-name": "",
-			"mono-font-name": "Roboto\\ Mono"
+			"combined-url": "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Code:wght@400;500;600;700&display=swap",
+			"sans-font-name": "Poppins",
+			"serif-font-name": "Merriweather",
+			"mono-font-name": "Fira\\ Code"
 		}
 	},
 	"webmention": {
 		"webmention-api-key": "",
 		"webmention-link": ""
 	},
-	"number-of-posts-per-page": 10,
+	"number-of-posts-per-page": 8,
 	"enable-lightbox": true,
 	"menu-pages-collection": "main",
 	"heading-blocks": ["heading_1", "heading_2", "heading_3"],
@@ -122,9 +122,9 @@
 	"all-footnotes-page-slug": "_all-footnotes",
 	"og-setup": {
 		"columns": 1,
-		"excerpt": false,
-		"title-font-url": "https://fonts.googleapis.com/css2?family=Kreon:wght@500&display=swap",
-		"footnote-font-url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
+		"excerpt": true,
+		"title-font-url": "https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap",
+		"footnote-font-url": "https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&display=swap"
 	},
 	"full-width-social-embeds": false,
 	"optimize-images": true,

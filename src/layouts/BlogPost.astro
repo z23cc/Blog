@@ -35,32 +35,43 @@ const articleDate = new Date(post.Date).toISOString();
 	meta={{ title: post.Title, description: post.Excerpt, articleDate, ogImage: socialImage }}
 >
 	<div class="max-w-[708px] sm:mr-20 print:mr-auto print:max-w-full">
-		<article class="break-words" data-pagefind-body>
-			<div id="blog-hero"><BlogHero post={post} /></div>
-			<div class="mt-8">
+		<article class="break-words animate-fadeIn" data-pagefind-body>
+			<div id="blog-hero" class="transition-transform duration-500 ease-in-out"><BlogHero post={post} /></div>
+			<div class="mt-8 prose prose-lg dark:prose-invert prose-headings:font-bold prose-a:text-link hover:prose-a:underline prose-img:rounded-lg">
 				<slot />
 				{/* Post body content */}
-				<hr class="divider bg-accent/30 mx-auto my-4 h-0.5 w-full rounded-sm border-none" />
+				<hr class="divider bg-accent/30 mx-auto my-6 h-0.5 w-full rounded-sm border-none transition-all duration-300 hover:bg-accent/60" />
 				{REFERENCES && <ReferencesSection post={post} shouldUseCache={shouldUseCache} />}
 			</div>
 		</article>
 		{!!headings.length && <TOC headings={headings} />}
 	</div>
 	<div class="max-w-[708px] sm:mr-20 print:hidden">
-		<aside class="" data-pagefind-ignore="all">
+		<aside class="mt-10 pt-6 border-t border-accent/20" data-pagefind-ignore="all">
 			<WebMentions />
 			<PostComments post={post} />
 		</aside>
 	</div>
 	<button
 		id="to-top-btn"
-		class="fixed end-4 bottom-20 z-30 flex h-10 w-10 translate-y-28 cursor-pointer items-center justify-center rounded-full border-2 border-transparent bg-zinc-200 text-3xl opacity-0 transition-all duration-300 hover:border-zinc-400 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 sm:end-8 sm:bottom-8 sm:h-12 sm:w-12 dark:bg-zinc-700 print:hidden"
+		class="fixed end-4 bottom-20 z-30 flex h-10 w-10 translate-y-28 cursor-pointer items-center justify-center rounded-full border-2 border-transparent bg-zinc-200 text-3xl opacity-0 transition-all duration-300 hover:border-zinc-400 hover:bg-zinc-300 hover:scale-110 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 sm:end-8 sm:bottom-8 sm:h-12 sm:w-12 dark:bg-zinc-700 dark:hover:bg-zinc-600 print:hidden"
 		aria-label="Back to Top"
 		data-show="false"
 	>
 		<Icon name={"to-top"} class="h-6 w-6" aria-label="Go Back to Top" stroke-linecap="round" />
 	</button>
 </BaseLayout>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+</style>
 
 <script>
 	document.addEventListener("DOMContentLoaded", function () {
